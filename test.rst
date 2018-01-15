@@ -2,19 +2,19 @@
 Programm scrapping Twitter (Python version 3.5)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-First step: Access to the Twitter API
+**First step: Access to the Twitter API**
 
 These tokens are needed for user authentifications.
 Credentials can be generate via Twitter's Application Management:https//apps.twitter.com/app/new
 
-consumer_key = "XXXXXXXXXXXXXXXXXXXXXXXXXX"
-consumer_secret = "XXXXXXXXXXXXXXXXXXXXXXXXXX"
-access_key = "XXXXXXXXXXXXXXXXXXXXXXXXXX"
-access_secret = "XXXXXXXXXXXXXXXXXXXXXXXXXX"
+consumer_key = **"XXXXXXXXXXXXXXXXXXXXXXXXXX"**
+consumer_secret = **"XXXXXXXXXXXXXXXXXXXXXXXXXX"**
+access_key = **"XXXXXXXXXXXXXXXXXXXXXXXXXX"**
+access_secret = **"XXXXXXXXXXXXXXXXXXXXXXXXXX"**
 
 Theses informations are saved in a config.py file
 
-We mainly import the python twitter library
+**We mainly import the python twitter library**
 
 .. code:: ipython3
 
@@ -28,7 +28,7 @@ We mainly import the python twitter library
     import os
     import list_twitte
 
-Once these libraries are imported, we can load our credentials
+**Once these libraries are imported, we can load our credentials**
 
 .. code:: ipython3
 
@@ -38,7 +38,7 @@ Once these libraries are imported, we can load our credentials
     config = {}
     exec(compile(open("F:\INNOV\WORKSPACE_TWITTER\Script_Python\config.py", "rb").read(), "config.py", 'exec'), config)
 
-We use these credentials in an object API
+**We use these credentials in an object API**
 
 .. code:: ipython3
 
@@ -48,9 +48,9 @@ We use these credentials in an object API
     twitter = Twitter(
     		auth = OAuth(config["access_key"], config["access_secret"], config["consumer_key"], config["consumer_secret"]))
 
-Now we create two python functions:
+**Now we create two python functions:**
 
-First : -get_last_import() : function that returns the last tweet id
+First : get_last_import() : function that returns the last tweet id
 about our personality and bypasses tweet retrieval limitation
 
 .. code:: ipython3
@@ -84,7 +84,7 @@ about our personality and bypasses tweet retrieval limitation
     	return returnarray
 
 The second function:
--get_user_tweets() : function that allows to fill in the control log file and implements the xml file with the information we are interested in
+		get_user_tweets() : function that allows to fill in the control log file and implements the xml file with the information we are interested in
 This function uses two parameters the twitter username and the location of the destination xml file
 
 We use a list that will contain all the twitter information
@@ -174,7 +174,7 @@ If we don't have user's information yet, we get the last 200 tweets
     			print ("...%s tweets downloaded so far for user" % (len(alltweets)))
     			print ("oldest tweet:" + str(oldest))
 
-All information is inserted into an xml file that is named by the username and tweet id, a file by tweet
+**All information is inserted into an xml file that is named by the username and tweet id, a file by tweet**
 
 .. code:: ipython3
 
@@ -212,7 +212,7 @@ All information is inserted into an xml file that is named by the username and t
     	print ("Number of tweets" + user+": "+ str(i))
     	resume.close()
 
-Inside a control log file we have …
+**Inside a control log file we have …**
 
 user:lauredlr
 lauredlr: newest:lauredlr-928992602304712704-4669-.xml
@@ -240,7 +240,7 @@ Number of tweetsc_erhel_deputee: 3345
 
 
 
-inside an xml file we have....
+**inside an xml file we have....**
 
 <?xml version="1.0"?>
 <Tweet>
