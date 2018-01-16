@@ -7,12 +7,12 @@ Programm scrapping Twitter (Python version 3.5)
 These tokens are needed for user authentifications.
 Credentials can be generate via Twitter's Application Management:https//apps.twitter.com/app/new
 
-consumer_key = **"XXXXXXXXXXXXXXXXXXXXXXXXXX"**
-consumer_secret = **"XXXXXXXXXXXXXXXXXXXXXXXXXX"**
-access_key = **"XXXXXXXXXXXXXXXXXXXXXXXXXX"**
-access_secret = **"XXXXXXXXXXXXXXXXXXXXXXXXXX"**
+* consumer_key = **"XXXXXXXXXXXXXXXXXXXXXXXXXX"**	
+* consumer_secret = **"XXXXXXXXXXXXXXXXXXXXXXXXXX"**
+* access_key = **"XXXXXXXXXXXXXXXXXXXXXXXXXX"**
+* access_secret = **"XXXXXXXXXXXXXXXXXXXXXXXXXX"**
 
-Theses informations are saved in a config.py file
+*Theses informations are saved in a config.py file*
 
 **We mainly import the python twitter library**
 
@@ -50,7 +50,7 @@ Theses informations are saved in a config.py file
 
 **Now we create two python functions:**
 
-First : get_last_import() : function that returns the last tweet id
+First : *get_last_import()* : function that returns the last tweet id
 about our personality and bypasses tweet retrieval limitation
 
 .. code:: ipython3
@@ -84,7 +84,7 @@ about our personality and bypasses tweet retrieval limitation
     	return returnarray
 
 The second function:
-		get_user_tweets() : function that allows to fill in the control log file and implements the xml file with the information we are interested in
+		*get_user_tweets()* : function that allows to fill in the control log file and implements the xml file with the information we are interested in
 This function uses two parameters the twitter username and the location of the destination xml file
 
 We use a list that will contain all the twitter information
