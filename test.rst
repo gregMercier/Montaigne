@@ -214,27 +214,27 @@ If we don't have user's information yet, we get the last 200 tweets
 
 **Inside a control log file we have …**
 
-user:lauredlr
-lauredlr: newest:lauredlr-928992602304712704-4669-.xml
-lauredlr: id_oldest:928992602304712704
-lauredlr: order_oldest:4669
-Already history, begin with:928992602304712704
-932896436739543039
-getting tweets before 932896436739543039
-...240 tweets downloaded so far for user
-oldest tweet:929960070460395519
-getting tweets before 929960070460395519
-...240 tweets downloaded so far for user
-oldest tweet:929960070460395519
-Number of tweetslauredlr: 4910
+* user:lauredlr
+* lauredlr: newest:lauredlr-928992602304712704-4669-.xml
+* lauredlr: id_oldest:928992602304712704
+* lauredlr: order_oldest:4669
+* Already history, begin with:928992602304712704
+* 932896436739543039
+* getting tweets before 932896436739543039
+* 240 tweets downloaded so far for user
+* oldest tweet:929960070460395519
+* getting tweets before 929960070460395519
+* 240 tweets downloaded so far for user
+* oldest tweet:929960070460395519
+* Number of tweetlauredlr: 4910
 
-user:c_erhel_deputee
-c_erhel_deputee: newest:c_erhel_deputee-860556311750209536-3344-.xml
-c_erhel_deputee: id_oldest:860556311750209536
-c_erhel_deputee: order_oldest:3344
-Already history, begin with:860556311750209536
-Oops! No more tweets to get!
-Number of tweetsc_erhel_deputee: 3345
+* user:c_erhel_deputee
+* c_erhel_deputee: newest:c_erhel_deputee-860556311750209536-3344-.xml
+* c_erhel_deputee: id_oldest:860556311750209536
+* c_erhel_deputee: order_oldest:3344
+* Already history, begin with:860556311750209536
+* Oops! No more tweets to get!
+* Number of tweetsc_erhel_deputee: 3345
 
 ..........
 
@@ -242,13 +242,13 @@ Number of tweetsc_erhel_deputee: 3345
 
 **inside an xml file we have....**
 
-<?xml version="1.0"?>
-<Tweet>
-<Id>575788670856335362</Id>
-<Date>2015-03-11 22:41:31</Date>
-<Text>RT @ecologiEnergie: [#Sendai2015] "Important de donner les infos nécessaires aux citoyens, professionnels et décideurs @RoyalSegolene http:…</Text>
-<Identifiant>RoyalSegolene</Identifiant>
-<Source>Twitter</Source>
-<Name_personality>Ségolène Royal</Name_personality>
-<ReTweet>1</ReTweet>
-</Tweet>
+* <?xml version="1.0"?>
+* <Tweet>
+* <Id>575788670856335362</Id>
+* <Date>2015-03-11 22:41:31</Date>
+* <Text>RT @ecologiEnergie: [#Sendai2015] "Important de donner les infos nécessaires aux citoyens, professionnels et décideurs @RoyalSegolene http:…</Text>
+* <Identifiant>RoyalSegolene</Identifiant>
+* <Source>Twitter</Source>
+* <Name_personality>Ségolène Royal</Name_personality>
+* <ReTweet>1</ReTweet>
+* </Tweet>
